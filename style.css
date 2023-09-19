@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img,
+picture,
+svg,
+video {
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+
+  object-position: center;
+}
+h1,
+p,
+ul,
+li {
+  color: #fff;
+}
+span {
+  display: inline-block;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+}
+button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 3px;
+  border: 0;
+  text-transform: capitalize;
+  cursor: pointer;
+  width: max-content;
+  background-color: transparent;
+}
+figure {
+  margin: 0;
+}
+fieldset {
+  border: 0;
+}
+/* tab styling */
+
+.main {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  background: linear-gradient(130deg, purple, orange);
+}
+.tabs {
+  aspect-ratio: 1;
+  height: max(100%, 350px);
+  max-width: 40rem;
+  height: max-content;
+}
+img {
+  width: 100vmax;
+  object-fit: cover;
+  height: 20vh;
+}
+ul {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+button {
+  color: #fff;
+  transition: 0.1s;
+  font-size: 1.2rem;
+  background: hsla(0, 0%, 100%, 0.087);
+}
+button:hover {
+  background: hsla(0, 0%, 100%, 0.15);
+}
+
+/* for JS */
+
+[data-tab-content] {
+  display: none;
+}
+[data-tab-content].active {
+  display: block;
+}

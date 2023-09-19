@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Tabs</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="tabs">
+        <ul>
+          <li><button data-tab-target="#home">Home</button></li>
+          <li><button data-tab-target="#pricing">Pricing</button></li>
+          <li><button data-tab-target="#about">About</button></li>
+        </ul>
+        <div class="tab-content">
+          <div id="home" data-tab-content class="active">
+            <h1>Home</h1>
+            <div class="content">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Temporibus enim repellat laboriosam maxime tempore laudantium
+                vel dignissimos facere vitae possimus.
+              </p>
+              <br />
+              <img src="https://picsum.photos/id/237/500/300" /><br />
+              <p>
+                Tempore pariatur quam quod corrupti, provident in earum nobis
+                rerum laudantium quia nesciunt eum obcaecati accusamus, quis
+                laboriosam. Deserunt suscipit amet facilis ipsam delectus alias,
+                voluptas velit voluptatum aliquid dolorum, aut mollitia
+                molestias?
+              </p>
+            </div>
+          </div>
+          <div id="pricing" data-tab-content>
+            <h1>Pricing</h1>
+            <br />
+            <div class="content">
+              <img src="https://picsum.photos/id/87/500/300" /><br />
+              <p>
+                Earum cumque, eum deserunt libero rem facilis sed quas nulla
+                quae! Earum veritatis consectetur tenetur provident voluptatem
+                neque ea tempore vitae eaque quam a repellat eos modi
+                consequatur doloribus, odio dolore eum.
+              </p>
+            </div>
+          </div>
+          <div id="about" data-tab-content>
+            <h1>About</h1>
+            <p>
+              Quas, excepturi perspiciatis! Hic deleniti ea dolore laborum sint
+              totam optio autem aut quisquam voluptates quibusdam, facilis nulla
+              consectetur maxime fugit!.
+            </p>
+            <br />
+            <img src="https://picsum.photos/id/180/500/300" /><br />
+            <p>
+              Hic deleniti ea dolore laborum sint totam optio autem aut quisquam
+              voluptates quibusdam, facilis nulla consectetur maxime fugit!.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
